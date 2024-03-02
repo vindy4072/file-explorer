@@ -1,0 +1,65 @@
+.file {
+  cursor: pointer;
+}
+
+
+.icon{
+  display: inline-block;
+}
+
+.icon-folder{
+  display: inline-block;
+  background-image: url('/public/folder.png'); 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+
+.file.file .icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url('/public/file.png'); 
+  background-size: contain; 
+  background-repeat: no-repeat;
+
+}
+
+.file-explorer{
+  padding: 5em;
+}
+ 
+.row{
+  display: flex;
+  height: 25px;
+}
+
+.file-contents {
+  margin-left: 30px; 
+  padding: 10px 0px;
+}
+
+.file.selected {
+  background-color: lightblue; 
+}
+
+
+.context-menu {
+  position: fixed;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 0;
+  z-index: 9999;
+}
+
+.context-menu-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.context-menu-item:hover {
+  background-color: #f0f0f0;
+}
